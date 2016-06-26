@@ -1,0 +1,16 @@
+The output from the states with the highest quality of care is below (state, average score, sum of scores, min score, max score):
+
+DE  1380.4455621301772	   933181.1999999998	    0.0	    177050.0
+NJ  1326.764657210402	   8979543.200000001	    0.0	    175016.0
+CT  1318.8986291980812	   3848546.200000001	    0.0	    192332.0
+FL  1247.6129406413504	   2.194301640000007E7	    0.0	    474745.0
+NY  1242.239215686275	   1.925967680000001E7	    0.0	    307910.0
+VA  1223.652090454904	   9307097.8		    0.0	    600183.0
+MA  1219.8984636394662	   7146165.199999993	    0.0	    193244.0
+DC  1218.7054687499995	   935965.7999999996	    0.0	    89982.0
+NC  1155.2266525871164	   1.0939996399999993E7	    0.0	    209999.0
+RI  1107.9499999999998	   1254199.4		    0.0	    155348.0
+
+
+The query suggestions that the 10 states listed (DE, NJ, CT, FL, MA, NY, VA, DC, NC, RI) are the states  with the highest quality of care.  For the definition of quality of care we decided to take the average score a the primary indicator of quality of care.  We believe that this is a sufficient assessment of consistency as the average weights all procedures equally.  This equates to consistency because a state that has only one test will have a single score and thus is consistent in it's one score.  On the other hand states with numerous test may have a large range of scores.  However a state that consistently gets a medium score on average does not have a consistently higher score than a state that has an equal number of high and low scores.  Hence taking a straight average is the closest we can get to understanding consistency of scores.
+

@@ -1,0 +1,3 @@
+SELECT (COUNT(*) * SUM(hospitalAvg * surveyAvg) - SUM(hospitalAvg) * SUM(surveyAvg)) / (sqrt(COUNT(*) * SUM(hospitalAvg * hospitalAvg) - SUM(hospitalAvg) * SUM(hospitalAvg)) * sqrt(COUNT(*) * SUM(surveyAvg * surveyAvg) - SUM(surveyAvg) * SUM(surveyAvg))) FROM hospital_survey_compares;
+
+SELECT (COUNT(*) * SUM(hospitalVar * surveyVar) - SUM(hospitalVar) * SUM(surveyVar)) / (sqrt(COUNT(*) * SUM(hospitalVar * hospitalVar) - SUM(hospitalVar) * SUM(hospitalVar)) * sqrt(COUNT(*) * SUM(surveyVar * surveyVar) - SUM(surveyVar) * SUM(surveyVar))) FROM hospital_survey_compares;

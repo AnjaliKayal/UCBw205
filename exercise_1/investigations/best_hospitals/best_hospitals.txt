@@ -1,0 +1,16 @@
+The out put from the best hospitals query are below (Hospital Name, Average score, Sum of scores, min score, max score, variance):
+
+CALIFORNIA HOSPITAL MEDICAL CENTER LA   14243.586538461535      1481332.9999999998 6.0 732929.0	  1.0127651563829725E10
+SOUTHSIDE REGIONAL MEDICAL CENTER  5997.834615384613		623774.7999999998  11.0		  300091.5	1.6959714802218795E9
+FLORIDA HOSPITAL   5650.4301886792455				598945.6	   103.0	  237373.1.0362187223164471E9
+NORTH MEMORIAL MEDICAL CENTER					5608.467924528301  594497.6	  20.5	285079.0	1.5021386589579332E9
+SEATTLE CHILDREN'S HOSPITAL					3773.5		   7547.0	  3773.5		3773.5 0.0
+METHODIST HEALTHCARE MEMPHIS HOSPITALS				3564.075438596491  406304.6	  30.0			169260.0 4.9138773363641423E8
+MONTEFIORE MEDICAL CENTER    3467.7349056603775			367579.9	   47.5		  153956.5		4.380585791200553E8
+NEW YORK-PRESBYTERIAN HOSPITAL					3236.144736842105  368920.49999999994			57.0 136951.5 3.2511308324804217E8
+ORLANDO HEALTH	      3198.1160714285716			358189.0	   38.5					147477.5      3.7968635759375966E8
+MEMORIAL HERMANN HOSPITAL SYSTEM				2766.3392857142853 309829.99999999994			22.5	      116381.0 2.359939142914924E8
+
+
+
+The query suggestions that the 10 hospitals listed (California Hospital Medical Center LA, Southside Regional Medical Center, etc.) are the hospitals with the highest quality of care.  For the definition of quality of care we decided to take the average score as the primary indicator of quality of care.  We believe that this is a sufficient assessment of consistency as the average weights all procedures equally.  This equates to consistency because a hospital that has only one test will have a single score and thus is consistent in it's one score, as evidenced by Seattle Children's Hospital.  On the other hand hospitals with numerous test may have a large range of scores (as evidence by the remaining hospitals on this list).  However a hospital that consistently gets a medium score on average does not have a consistently higher score than a hospital that has an equal number of high and low scores.  Hence taking a straight average is the closest we can get to understanding consistency of scores. 

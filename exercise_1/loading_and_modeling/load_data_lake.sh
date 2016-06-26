@@ -5,7 +5,11 @@ tail -n +2 Hospital\ General\ Information.csv > hospitals.csv
 tail -n +2 Timely\ and\ Effective\ Care\ -\ Hospital.csv > effective_care.csv
 tail -n +2 Readmissions\ and\ Deaths\ -\ Hospital.csv > readmissions.csv
 tail -n +2 Measure\ Dates.csv > Measures.csv
-tail -n +2 hvbp_hcahps_05_28_2015.csv > surveys_responses.csv
+tail -n +2 hvbp_hcahps_05_28_2015.csv > surveys_responses_unadjusted.csv
+
+#Adjust survey responses so that it will load into HDFS
+sed 's/ out of 10//g' surveys_responses_unadjusted.csv > survey_responses_partially_adjusted.csv
+sed 's/ out of 9//g' survey_responses_partially_adjusted.csv > surveys_responses.csv
 
 # Make hdfs directory for loading data if it doesn't already exist
 hdfs dfs -test -d /user/w205/hospital_compare
