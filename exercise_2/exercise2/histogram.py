@@ -17,7 +17,7 @@ try:
     cur = conn.cursor()
 
 
-    cur.execute("SELECT word, count from Tweetwordcount WHERE count BETWEEN %s AND %s ORDER BY count DESC" % (2,14))
+    cur.execute("SELECT word, count from Tweetwordcount WHERE count BETWEEN %s AND %s ORDER BY count DESC" % (var1, var2))
     records = cur.fetchall()
     for rec in records:
         print rec[0], ": ", rec[1]
