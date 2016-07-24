@@ -1,0 +1,10 @@
+2016-07-24 16:22:00,033 - streamparse.storm.component - ERROR - Exception in WordCounter.run()
+Traceback (most recent call last):
+  File "/opt/py27environment/lib/python2.7/site-packages/streamparse/storm/component.py", line 489, in run
+    self._run()
+  File "/opt/py27environment/lib/python2.7/site-packages/streamparse/storm/bolt.py", line 219, in _run
+    self.process(tup)
+  File "bolts/wordcount.py", line 39, in process
+    cur.execute("UPDATE Tweetwordcount SET count=%s WHERE word=%s", (uCount, uWord))
+InternalError: current transaction is aborted, commands ignored until end of transaction block
+
