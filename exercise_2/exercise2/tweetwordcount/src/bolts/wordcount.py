@@ -22,6 +22,9 @@ class WordCounter(Bolt):
         #import psycopg2 and connect to database
         import psycopg2
         conn = psycopg2.connect('dbname=tcount user=postgres password=pass')
+        #can use the following if the above doesn't work
+        #conn = psycopg2.connect(database="Tcount", user="postgres", password="pass", host="localhost", port="5432")
+
         cur = conn.cursor()
 
         #update word count in database
