@@ -8,7 +8,7 @@ WITH SERDEPROPERTIES (
 "escapeChar" = '\\'
 )
 STORED AS TEXTFILE
-LOCATION '/user/w205/health_data';
+LOCATION '/user/w205/health_data/nyc_hospital';
 
 DROP TABLE boston_hospital_locations;
 CREATE EXTERNAL TABLE boston_hospital_locations
@@ -20,7 +20,7 @@ WITH SERDEPROPERTIES (
 "escapeChar" = '\\'
 )
 STORED AS TEXTFILE
-LOCATION '/user/w205/health_data';
+LOCATION '/user/w205/health_data/boston_hospital';
 
 DROP TABLE philly_hospital_locations;
 CREATE EXTERNAL TABLE philly_hospital_locations
@@ -32,7 +32,7 @@ WITH SERDEPROPERTIES (
 "escapeChar" = '\\'
 )
 STORED AS TEXTFILE
-LOCATION '/user/w205/health_data';
+LOCATION '/user/w205/health_data/philly_hospital';
 
 DROP TABLE 
 nyc_airquality;
@@ -45,7 +45,7 @@ WITH SERDEPROPERTIES (
 "escapeChar" = '\\'
 )
 STORED AS TEXTFILE
-LOCATION '/user/w205/health_data';
+LOCATION '/user/w205/health_data/nyc_airquality';
 
 DROP TABLE 
 philly_airquality;
@@ -58,7 +58,7 @@ WITH SERDEPROPERTIES (
 "escapeChar" = '\\'
 )
 STORED AS TEXTFILE
-LOCATION '/user/w205/health_data';
+LOCATION '/user/w205/health_data/philly_airquality';
 
 DROP TABLE 
 nyc_restaurants;
@@ -71,7 +71,7 @@ WITH SERDEPROPERTIES (
 "escapeChar" = '\\'
 )
 STORED AS TEXTFILE
-LOCATION '/user/w205/health_data';
+LOCATION '/user/w205/health_data/nyc_restaurant';
 
 DROP TABLE 
 boston_restaurants;
@@ -84,4 +84,4 @@ WITH SERDEPROPERTIES (
 "escapeChar" = '\\'
 )
 STORED AS TEXTFILE
-LOCATION '/user/w205/health_data';
+LOCATION '/user/w205/health_data/boston_restaurant';

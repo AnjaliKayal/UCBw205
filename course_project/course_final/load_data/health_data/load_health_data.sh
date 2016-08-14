@@ -2,7 +2,7 @@
 
 #download hospital locations                                                                                                                    
 
-wget https://data.cityofnewyork.us/api/views/f9bf-2cp4/rows.csv
+wget https://data.cityofnewyork.us/api/views/f7b6-v6v3/rows.csv
 
 tail -n +2 rows.csv > nyc_hospital_locations.csv
 
@@ -66,14 +66,54 @@ if [[ $? -eq 0 ]]
       hdfs dfs -mkdir /user/w205/health_data
 fi
 
+# Make hdfs directory for loading data if it doesn't already exist                                                                                                             
+ 
+hdfs dfs -test -d /user/w205/health_data/nyc_hospital
+if [[ $? -eq 0 ]]
+   then
+      echo "Directory /user/w205/health_data/nyc_hospital already exists"
+   else
+      echo "Creating hdfs directory /user/w205/health_data/nyc_hospital"
+      hdfs dfs -mkdir /user/w205/health_data/nyc_hospital
+      hdfs dfs -mkdir /user/w205/health_data/boston_hospital
+      hdfs dfs -mkdir /user/w205/health_data/philly_hospital
+fi
+
+# Make hdfs directory for loading data if it doesn't already exist                                                                                                            
+                                                                                                                                                                             
+
+hdfs dfs -test -d /user/w205/health_data/nyc_restaurant
+if [[ $? -eq 0 ]]
+   then
+      echo "Directory /user/w205/health_data/nyc_restaurant already exists"
+   else
+      echo "Creating hdfs directory /user/w205/health_data/nyc_restaurant"
+      hdfs dfs -mkdir /user/w205/health_data/nyc_restaurant
+      hdfs dfs -mkdir /user/w205/health_data/boston_restaurant
+fi
+
+# Make hdfs directory for loading data if it doesn't already exist                                                                                                              
+
+
+hdfs dfs -test -d /user/w205/health_data/nyc_airquality
+if [[ $? -eq 0 ]]
+   then
+      echo "Directory /user/w205/health_data/nyc_airquality already exists"
+   else
+      echo "Creating hdfs directory /user/w205/health_data/nyc_airquality"
+      hdfs dfs -mkdir /user/w205/health_data/nyc_airquality
+      hdfs dfs -mkdir /user/w205/health_data/philly_airquality
+fi
+
+
 
 
 echo "Loading data files into hdfs"
-hdfs dfs -put nyc_hospital_locations.csv /user/w205/health_data
-hdfs dfs -put boston_hospital_locations.csv /user/w205/health_data
-hdfs dfs -put philly_hospital_locations.csv /user/w205/health_data
-hdfs dfs -put nyc_restaurants.csv /user/w205/health_data
+hdfs dfs -put nyc_hospital_locations.csv /user/w205/health_data/nyc_hospital
+hdfs dfs -put boston_hospital_locations.csv /user/w205/health_data/boston_hospital
+hdfs dfs -put philly_hospital_locations.csv /user/w205/health_data/philly_hospital
+hdfs dfs -put nyc_restaurants.csv /user/w205/health_data/nyc_restaurant
 
-hdfs dfs -put boston_restaurants.csv /user/w205/health_data
-hdfs dfs -put nyc_airquality.csv /user/w205/health_data
-hdfs dfs -put philly_airquality.csv /user/w205/health_data
+hdfs dfs -put boston_restaurants.csv /user/w205/health_data/boston_restaurant
+hdfs dfs -put nyc_airquality.csv /user/w205/health_data/nyc_airquality
+hdfs dfs -put philly_airquality.csv /user/w205/health_data/philly_airquality

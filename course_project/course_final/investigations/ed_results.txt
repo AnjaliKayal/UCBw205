@@ -1,0 +1,11 @@
+
+NEW YORK	327.90394669598004	302.69197836211634	302.69197836211634	302.69197836211634
+PENNSYLVANIA	235.76071534874492	235.2289661672785	235.2289661672785	235.2289661672785
+
+
+THE NYC SAT score dataset results in the following average scores:
+reading	Math	  	      writing
+NULL	2.9091779583051794E11 NULL
+
+DUE to ta majority of the dataset being NULL or empty the results are not meaningful.
+

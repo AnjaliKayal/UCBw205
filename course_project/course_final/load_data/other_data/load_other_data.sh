@@ -6,29 +6,35 @@
 
 wget https://data.cityofboston.gov/api/views/ah28-sywy/rows.csv
 
-tail -n +2 rows.csv > boston_economic_2015.csv
+tail -n +2 rows.csv > boston_economic_2015_v1.csv
 
 rm rows.csv
 
-sed 's/$//g' boston_economic_2014.csv > boston_economic_2014.csv
+sed 's/$//g' boston_economic_2015_v1.csv > boston_economic_2015.csv
+
+rm boston_economic_2015_v1.csv
 
 wget https://data.cityofboston.gov/api/views/4swk-wcg8/rows.csv
 
-tail -n +2 rows.csv > boston_economic_2014.csv
+tail -n +2 rows.csv > boston_economic_2014_v1.csv
 
 rm rows.csv
 
-sed's/$//g' boston_economic_2014.csv > boston_economic_2014.csv
+sed's/$//g' boston_economic_2014_v1.csv > boston_economic_2014.csv
+
+rm boston_economic_2014_v1.csv
 
 #download philly economic data        
 
 wget https://data.cityofboston.gov/api/views/4swk-wcg8/rows.csv
 
-tail -n +2 rows.csv > philly_economic.csv
+tail -n +2 rows.csv > philly_economic_v1.csv
 
 rm rows.csv
 
-sed 's/$//g' philly_economic.csv > philly_economic.csv
+sed 's/$//g' philly_economic_v1.csv > philly_economic.csv
+
+rm philly_economic_v1.csv
 
 #download NYC economic data        
 
