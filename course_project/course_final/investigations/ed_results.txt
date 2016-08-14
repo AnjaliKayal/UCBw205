@@ -1,11 +1,27 @@
-
+The results from the overall education set that tracks state test results as well as national exams are below:
+		math 2009		math 2010		read 2009		read 2010
+MASSACHUSETTS	268.84702414907775	268.84702414907775	268.84702414907775	268.84702414907775
 NEW YORK	327.90394669598004	302.69197836211634	302.69197836211634	302.69197836211634
 PENNSYLVANIA	235.76071534874492	235.2289661672785	235.2289661672785	235.2289661672785
+
+Based on these results it that New York has the best test results, followed by Massachusets and then Pennsylvania.
 
 
 THE NYC SAT score dataset results in the following average scores:
 reading	Math	  	      writing
 NULL	2.9091779583051794E11 NULL
 
-DUE to ta majority of the dataset being NULL or empty the results are not meaningful.
+Due to the majority of the dataset being NULL or empty the results are not meaningful.
 
+
+The results from the Philadelphia SAT queries are below:
+
+2013	    284.8703407924564    71.75941641938675	      5.698641362548539
+
+2014	    284.8703407924564    71.75941641938675	      5.698641362548539
+
+2015	    NULL		     284.8703407924564	      71.75941641938675
+
+Below we can see that in general the results are staying the same and that given the SAT scores are between 200 - 800, these scores are not meaningful.  So we will use the data from the overall education sets.
+
+As a results we have New York has the best test results, followed by Massachusets and then Pennsylvania.

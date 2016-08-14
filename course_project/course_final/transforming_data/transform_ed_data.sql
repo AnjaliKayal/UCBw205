@@ -34,14 +34,16 @@ DROP TABLE nyc_ed_averages;
 
 CREATE TABLE nyc_ed_average AS SELECT AVG(satreadingavg), AVG(satmathavg), AVG(satwritingavg) FROM nyc_ed_data; 
 
-DROP TABLE philly_2013_2014;
+DROP TABLE philly_2013_average;
 
-CREATE TABLE philly_2013_2014 AS SELECT A.school, A.verbalavg as verbal2013, A.mathavg as math2013, A.writingavg as writ2013, B.readingavg as verbal2014, B.mathavg as math2014, B.writingavg as writ2014 from philly_ed_2013 as A  full join philly_ed_2014 as B WHERE A.school = B.school;
+CREATE TABLE philly_2013_average AS SELECT AVG(verbalavg), AVG(mathavg), AVG(writingavg) from philly_ed_2013;
 
-DROP TABLE philly_ed_data;
+DROP TABLE philly_2014_average;
 
-CREATE TABLE philly_ed_data AS SELECT A.school, A.verbal2013, A.math2013, A.writ2013, A.verbal2014, A.math2014, A.writ2014, B.readingavg as verbal2015, B.mathavg as math2015, B.writingavg as writ2015 from philly_2013_2014 as A full join philly_ed_2015 as B WHERE A.school = B.school;
+CREATE TABLE philly_2014_average AS SELECT AVG(readingavg), AVG(mathavg), AVG(writingavg) from philly_ed_2014;
 
-DROP TABLE philly_averages;
+DROP TABLE philly_2015_average;
 
-CREATE TABLE philly_averages AS SELECT AVG(verbal2013), AVG(math2013), AVG(writ2013),AVG(verbal2014), AVG(math2014), AVG(writ2014),AVG(verbal2015), AVG(math2015), AVG(writ2015) from philly_ed_data;
+CREATE TABLE philly_2015_average AS SELECT AVG(readingavg), AVG(mathavg), AVG(writingavg) from philly_ed_2015;
+
+

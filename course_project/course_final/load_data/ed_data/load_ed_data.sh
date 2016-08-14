@@ -92,6 +92,6 @@ hdfs dfs -put philly_ed_2015.csv /user/w205/ed_data
 hdfs dfs -put philly_ed_2014.csv /user/w205/ed_data
 hdfs dfs -put philly_ed_2013.csv /user/w205/ed_data
 hdfs dfs -put overall_math_2010_11.csv /user/w205/ed_data
-hdfs dfs -put overall_math_2009_11.csv /user/w205/ed_data
+hdfs dfs -put overall_math_2009_10.csv /user/w205/ed_data
 hdfs dfs -put overall_read_2010_11.csv /user/w205/ed_data
-hdfs dfs -put overall_read_2009_11.csv /user/w205/ed_data
+hdfs dfs -put overall_read_2009_10.csv /user/w205/ed_data
