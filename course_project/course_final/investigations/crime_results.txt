@@ -1,0 +1,35 @@
+
+New York Crime crime totals:
+
+2000	       2001		2002		2003		2004		2005		2006		2007	  2008      2009      2010      2011
+2501656.0      2387388.0	2213652.0	2080392.0	2053260.0	2017200.0	2035256.0	2093656.0 2074868.0 2070496.0 2064388.0 2008116.0
+
+New York population: 8.46 M in 2013
+
+In general while New York crime is trending down, it is only trending down slowly.  Approximately -2% CAGR and in 2011 the crime rate per population was approximately 23%.
+
+
+Philadelphia crime totals
+
+2006		2007		2008		2009		2010		2011		2012		2013	  2014    2015   2016
+200675		189347		186753		170556		165091		159984		159976		150602	  147735  144573 77947
+
+Philadelphia population:  1.53 M in 2013
+
+The philadelphia crime is trending down significantly with an approximate -4% CAGR and in 2015 the crime rate per population was approximately 9%.
+
+Boston crime totals
+
+2012		2013		2014		2015
+31720		62896		64096		34213
+
+Boston popultion: 645,966 in 2013
+
+Something to note here is that 2012 and 2015 data are only for the half year.  So if we make a simplifying assumption that that would be approximately half of the crime.  Then we get the following crime totals
+
+2012            2013            2014            2015
+62440           62896           64096           68426
+
+Then we see that the crime in boston is actually increasing with a 3% CAGR.  The 2015 approximate crime rate per population was 10%.
+
+Given this philadelphia is the best place to live given that crime rate is the lowet at 9% and is also decreasing at the fastest rate.

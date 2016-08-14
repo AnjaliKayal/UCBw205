@@ -1,0 +1,19 @@
+The average number of facilities in which a substantial amount of air pollutants were found was ~2.8.  Of 12 facilities, that means there was a 23% rate of airpollutants.
+
+In comparison to NYC's rate of 36.631 that gives philadelphia a higher score for airpollutants.
+
+When it comes to restaurants NYC had no restaurants fail, 100% of restaurants scored a C or above.  In comparison boston only had a Pass rate of 41%.  This means that NYC scored higher in restaurant health
+
+When it comes to hospital locations.  
+
+Philadlephia had 45, for 1.5 M people - which implies approximately 33,333 people per hospital
+
+NYC had 234 for 8.4 M people - which implies approximately 35,897 people per hospital
+
+Finally Boston had 78 hospitals for 645,966 people - which implies appromiately 8,281 per hospital  
+
+From a healthcare access perspective the ranking is Boston, Philadelphia, NYC.
+
+From a air and health ranking it is Philadelphia, NYC, Boston.
+
+Given that healthcare ranking is more important, we will take the healthcare ranking as the health ranking.
